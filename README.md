@@ -23,8 +23,8 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/yourusername/job-scheduling-meta-heuristic.git
-
+   git clone https://github.com/drohan0717/Job-Scheduling.git
+   
 2. **Setup your master and slave nodes where master represents the node which initiates execution, follow this playlist for in detail understanding for setting up your distributed system.**
    [https://www.youtube.com/watch?v=-t4k6IwmtFI&t=75s]
 
@@ -50,9 +50,13 @@ To run your code, follow these steps:
    
 3. **Finally run this command to start execution**:
    ```sh
-   mpiexec --hostfile hosts -np <total_cores> python job_scheduling.py
+   mpiexec --hostfile hosts -np <total_cores> python file_name.py
+4. **Replace file_name.py with any of the following:**
+   It_gr.py: Iterated Greedy Algorithm
+   gen.py  : Genetic Analysis Algorithm
+   pso.py  : Paricle Swarm Optimization Algorithm
 
-## Performance Evaluation:
+## Performance Evaluation
 
 The application was tested on 2 datasets:
 1. 10,000 jobs across 10 machines
